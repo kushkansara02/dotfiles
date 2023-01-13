@@ -98,6 +98,7 @@ brew install pv
 brew install rename
 brew install rlwrap
 brew install ssh-copy-id
+brew install sshfs
 brew install tree
 brew install vbindiff
 brew install zopfli
