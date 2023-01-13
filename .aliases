@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+alias n=nvim
+
+# Easier navigation: .., ..., ...., ....., ~ and -
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias study="cd ~/OneDrive\ -\ University\ of\ Waterloo/University/Study\ Terms/Winter\ 2023\ -\ 3A/"
+alias ura="cd ~/OneDrive\ -\ University\ of\ Waterloo/University/Study\ Terms/URA/"
+
+alias ll="ls -la"
+
+# Shortcuts
+alias g="git"
+
+# Always enable colored `grep` output
+# Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
+
+# Merge PDF files, preserving hyperlinks
+# Usage: `mergepdf input{1,2,3}.pdf`
+alias mergepdf='gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=_merged.pdf'
+
+# Intuitive map function
+# For example, to list all directories that contain a certain file:
+# find . -name .gitattributes | map dirname
+alias map="xargs -n1"
+
+# Reload the shell (i.e. invoke as a login shell)
+alias reload="exec ${SHELL} -l"
+
+# Print each PATH entry on a separate line
+alias path='echo -e ${PATH//:/\\n}'
+
+# dotfiles convenience
+alias sync="cd ~/dotfiles && source ~/dotfiles/bootstrap.sh"
