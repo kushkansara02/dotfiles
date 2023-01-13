@@ -8,6 +8,7 @@ function doIt() {
 		--exclude ".osx" \
 		--exclude "bootstrap.sh" \
 		--exclude "README.md" \
+        --exclude ".vim/" \
 		--exclude "LICENSE-MIT.txt" \
 		-avhr --no-perms . ~;
 	exec zsh;
