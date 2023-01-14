@@ -44,6 +44,16 @@ return {}, {
             }
         )
     ),
+    s({ trig = "mc", dscr = "Non inline math environment" },
+        fmta(
+            "<>$$<>$$",
+            {
+                f(function(_, snip) return snip.captures[1] end),
+                d(1, get_visual),
+            }
+        ),
+        { condition = line_begin }
+    ),
 
     s({ trig = 'ff' },
         fmta(
