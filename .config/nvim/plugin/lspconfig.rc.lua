@@ -26,6 +26,10 @@ nvim_lsp.golangci_lint_ls.setup {
     on_attach = on_attach
 }
 
+nvim_lsp.clangd.setup {
+    on_attach = on_attach
+}
+
 nvim_lsp.ltex.setup {}
 nvim_lsp.texlab.setup {}
 

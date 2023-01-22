@@ -66,4 +66,16 @@ return {}, {
         )
     ),
 
+    s({ trig = 'sm' },
+        fmta(
+            [[<>\sum_{<>}^{<>}<>]],
+            {
+                f(function(_, snip) return snip.captures[1] end),
+                i(1),
+                i(2),
+                i(0)
+            }
+        )
+    ),
+
 }
