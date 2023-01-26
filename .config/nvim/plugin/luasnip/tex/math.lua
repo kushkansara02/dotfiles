@@ -78,4 +78,15 @@ return {}, {
         )
     ),
 
+    s({ trig = 'bbr' },
+        fmta(
+            [[<>\left(<>\right)<>]],
+            {
+                f(function(_, snip) return snip.captures[1] end),
+                i(1),
+                i(0)
+            }
+        )
+    ),
+
 }
