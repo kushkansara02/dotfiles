@@ -19,6 +19,12 @@ function fs() {
 	fi;
 }
 
+# create sshfs volume
+function sshv() {
+    mkdir ~/kkansara-$1;
+    sshfs $1: ~/kkansara-$1 -o volname=kkansara-ssh-$1;
+}
+
 # Use Git’s colored diff when available
 hash git &>/dev/null;
 if [ $? -eq 0 ]; then
