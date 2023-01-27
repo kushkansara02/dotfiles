@@ -22,6 +22,7 @@ function fs() {
 # create sshfs volume
 function sshv() {
     mkdir ~/kkansara-$1;
+    umount ~/kkansara-$1;
     sshfs $1: ~/kkansara-$1 -o volname=kkansara-ssh-$1;
 }
 
