@@ -6,13 +6,27 @@ lvim.keys = {
 
   ---@usage change or add keymappings for normal mode
   normal_mode = {
-    -- Tab switch buffer
+    -- Tabs
     ["<S-l>"] = ":BufferLineCycleNext<CR>",
     ["<S-h>"] = ":BufferLineCyclePrev<CR>",
 
     -- Page down/up
     ["[d"] = "<PageUp>",
     ["]d"] = "<PageDown>",
+
+    -- Delete a word backwaards
+    ["dw"] = 'vb"_d',
+
+    -- Moving windows
+    ["wh"] = "<C-w>h",
+    ["wj"] = "<C-w>j",
+    ["wk"] = "<C-w>k",
+    ["wl"] = "<C-w>l",
+
+    ["qql"] = "<C-w><",
+    ["qqh"] = "<C-w>>",
+    ["qqk"] = "<C-w>+",
+    ["qqj"] = "<C-w>-",
   },
 
   ---@usage change or add keymappings for visual mode
