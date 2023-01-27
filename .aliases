@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-alias n=nvim
+alias n=lvim
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
