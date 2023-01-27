@@ -47,7 +47,7 @@ vim.api.nvim_create_user_command(
 )
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
- capabilities.offsetEncoding = 'utf-8'
- require('lspconfig').clangd.setup{
-        capabilities = capabilities
+capabilities.offsetEncoding = 'utf-8'
+require('lspconfig').clangd.setup {
+    capabilities = capabilities
 }
