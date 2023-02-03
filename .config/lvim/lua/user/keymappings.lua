@@ -1,8 +1,10 @@
 local M = {}
 lvim.keys = {
   -- ---@usage change or add keymappings for insert mode
-  -- insert_mode = {
-  -- },
+  insert_mode = {
+    ["jk"] = "<Plug>luasnip-expand-or-jump"
+  },
+  --imap <silent><expr> jk luasnip#expand_or_jumpable() ? '<Plug>luasnip-expand-or-jump' : 'jk'
 
   ---@usage change or add keymappings for normal mode
   normal_mode = {
