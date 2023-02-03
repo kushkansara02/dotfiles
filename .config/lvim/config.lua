@@ -23,3 +23,4 @@ lvim.builtin.treesitter.auto_install = true
 lvim.plugins = require_clean "user.plugins"
 reload 'user.luasnip'
 reload 'user.keymappings'
+reload 'user.vimtex'
