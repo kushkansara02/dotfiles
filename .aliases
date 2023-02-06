@@ -8,7 +8,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias study="cd ~/Desktop/university/study/winter_2023/"
-alias ura="cd ~/Desktop/university/study/winter_2023/ura/"
+alias ura="cd ~/Desktop/university/study/winter_2023/ura/wear-lev/code/"
 alias dot="cd ~/dotfiles"
 alias sshc="cd ~/.ssh"
 
