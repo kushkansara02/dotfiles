@@ -12,32 +12,38 @@ local line_begin = require("luasnip.extras.expand_conditions").line_begin
 
 -- functions
 local get_visual = function(args, parent)
-    if (#parent.snippet.env.SELECT_RAW > 0) then
-        return sn(nil, i(1, parent.snippet.env.SELECT_RAW))
-    else -- If SELECT_RAW is empty, return a blank insert node
-        return sn(nil, i(1))
-    end
+  if (#parent.snippet.env.SELECT_RAW > 0) then
+    return sn(nil, i(1, parent.snippet.env.SELECT_RAW))
+  else -- If SELECT_RAW is empty, return a blank insert node
+    return sn(nil, i(1))
+  end
 end
 
 return {}, {
 
-    s({ trig = ";a", snippetType = "autosnippet" },
-        {
-            t("\\alpha"),
-        }
-    ),
+  s({ trig = ";a", snippetType = "autosnippet" },
+    {
+      t("\\alpha"),
+    }
+  ),
 
 
-    s({ trig = ";b", snippetType = "autosnippet" },
-        {
-            t("\\beta"),
-        }
-    ),
+  s({ trig = ";b", snippetType = "autosnippet" },
+    {
+      t("\\beta"),
+    }
+  ),
 
-    s({ trig = ";g", snippetType = "autosnippet" },
-        {
-            t("\\gamma"),
-        }
-    ),
+  s({ trig = ";g", snippetType = "autosnippet" },
+    {
+      t("\\gamma"),
+    }
+  ),
+
+  s({ trig = ";d", snippetType = "autosnippet" },
+    {
+      t("\\delta"),
+    }
+  ),
 
 }
