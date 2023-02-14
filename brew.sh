@@ -19,9 +19,10 @@ brew install neovim
 brew install tmux
 brew install grep
 brew install openssh
+brew install stow
 
-# LunarVim
 bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 brew install ack
 
