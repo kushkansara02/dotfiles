@@ -25,11 +25,6 @@ vim.opt.expandtab = true
 vim.opt.scrolloff = 10
 vim.opt.shell = 'zsh'
 
-vim.opt.backupdir = '~/.vim/backups'
-vim.opt.directory = '~/.vim/swaps'
-vim.opt.undodir = '~/.vim/undo'
-vim.opt.backupskip = '/tmp*,/private/tmp/*'
-
 vim.opt.number = true
 vim.opt.relativenumber = true
 

@@ -59,6 +59,7 @@ packer.startup(function(use)
     use 'lervag/vimtex'
     use({ "L3MON4D3/LuaSnip", tag = "v<CurrentMajor>.*" })
     use { 'williamboman/mason.nvim' }
+    use { 'fgheng/winbar.nvim' }
 end)
 
 vim.cmd([[
