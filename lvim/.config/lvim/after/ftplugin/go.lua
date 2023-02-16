@@ -7,3 +7,5 @@ formatters.setup { { command = "goimports" } }
 
 local linters = require "lvim.lsp.null-ls.linters"
 linters.setup { { command = "golangci-lint" } }
+
+require('dap-go').setup()
