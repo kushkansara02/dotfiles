@@ -73,6 +73,33 @@ return {}, {
         { condition = line_begin }
       ),
 
+      s({ trig = "cd", dscr = "code environment" },
+        fmta(
+          [[
+            \begin{lstlisting}[language=<>]
+              <>
+            \end{lstlisting}
+          ]],
+          {
+            i(1),
+            i(0),
+          }
+        ),
+        { condition = line_begin }
+      ),
+
+      s({ trig = "nlc", dscr = "code environment" },
+        fmta(
+          [[
+            \lstinline[language=<>]{<>}
+          ]],
+          {
+            i(1),
+            i(2),
+          }
+        )
+      ),
+
       s({ trig = "itm", dscr = "Item list" },
         fmta(
           [[
