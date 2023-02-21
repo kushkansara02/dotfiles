@@ -77,7 +77,7 @@ return {}, {
         fmta(
           [[
             \begin{lstlisting}[language=<>]
-              <>
+            <>
             \end{lstlisting}
           ]],
           {
@@ -91,11 +91,10 @@ return {}, {
       s({ trig = "nlc", dscr = "code environment" },
         fmta(
           [[
-            \lstinline[language=<>]{<>}
+            \lstinline[language=C]{<>}
           ]],
           {
             i(1),
-            i(2),
           }
         )
       ),
