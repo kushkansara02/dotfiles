@@ -85,8 +85,17 @@ local t_opts = {
   noremap = true, -- use `noremap` when creating keymaps
   nowait = true, -- use `nowait` when creating keymaps
 }
+local x_opts = {
+  mode = "x", -- x mode
+  prefix = "<leader>",
+  buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings
+  silent = true, -- use `silent` when creating keymaps
+  noremap = true, -- use `noremap` when creating keymaps
+  nowait = true, -- use `nowait` when creating keymaps
+}
 
 local normal_mappings = {
+  ["m"] = { "<Plug>(comment_toggle_linewise_current)<cr>", "Comment line" },
   ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
   ["b"] = {
     "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
@@ -98,10 +107,9 @@ local normal_mappings = {
   ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
   ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
   ["f"] = {
-    "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
+    "<cmd>lua require('telescope.builtin').git_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
     "Find files",
   },
-  ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
   ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
   p = {
     name = "Packer",
@@ -174,6 +182,7 @@ local normal_mappings = {
     R = { "<cmd>Telescope registers<cr>", "Registers" },
     k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
     C = { "<cmd>Telescope commands<cr>", "Commands" },
+    t = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
   },
   t = {
     name = "Terminal",
@@ -192,7 +201,11 @@ local t_mappings = {
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
   },
 }
+local x_mappings = {
+  ["m"] = { "<Plug>(comment_toggle_linewise_visual)<cr>", "Comment line" },
+}
 
 which_key.setup(setup)
 which_key.register(normal_mappings, normal_opts)
 which_key.register(t_mappings, t_opts)
+which_key.register(x_mappings, v_opts)

@@ -48,10 +48,6 @@ keymap("n", "dw", 'vb"_d', opts)
 keymap("n", "U", "<PageUp>", opts)
 keymap("n", "I", "<PageDown>", opts)
 
--- LuaSnip
-keymap("n", "jk", "<Plug>luasnip-expand-or-jump", opts)
-
-
 -- Visual --
 
 -- Stay in indent mode

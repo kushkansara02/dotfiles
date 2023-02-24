@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-alias n=lvim
-
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
