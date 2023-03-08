@@ -25,12 +25,11 @@ lvim.keys = {
     ["wk"] = "<C-w>k",
     ["wl"] = "<C-w>l",
 
-    ["qql"] = "<C-w><",
-    ["qqh"] = "<C-w>>",
-    ["qqk"] = "<C-w>+",
-    ["qqj"] = "<C-w>-",
+    ["<C-h>"] = "<C-w><",
+    ["<C-l>"] = "<C-w>>",
+    ["<C-j>"] = "<C-w>+",
+    ["<C-k>"] = "<C-w>-",
   },
-
   ---@usage change or add keymappings for visual mode
   visual_mode = {
     -- Allow pasting same thing many times
@@ -44,7 +43,6 @@ lvim.keys = {
     ["K"] = ":move '<-2<CR>gv-gv",
     ["J"] = ":move '>+1<CR>gv-gv",
   },
-
   ---@usage change or add keymappings for visual block mode
   visual_block_mode = {
     -- Allow pasting same thing many times
