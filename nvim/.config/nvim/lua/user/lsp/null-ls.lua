@@ -11,8 +11,8 @@ local diagnostics = null_ls.builtins.diagnostics
 null_ls.setup({
   debug = false,
   sources = {
-    formatting.clang_format,
-    diagnostics.cpplint,
+    -- formatting.clang_format,
+    -- diagnostics.cpplint,
   },
   on_attach = function(client, bufnr)
     if client.supports_method("textDocument/formatting") then
