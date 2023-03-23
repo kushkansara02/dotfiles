@@ -26,6 +26,10 @@ function sshv() {
     sshfs $1: ~/kkansara-$1 -o volname=kkansara-ssh-$1;
 }
 
+function xcl() {
+  rm *.aux *.fdb_latexmk *.fls *.log *.synctex.gz
+}
+
 # Use Git’s colored diff when available
 hash git &>/dev/null;
 if [ $? -eq 0 ]; then
