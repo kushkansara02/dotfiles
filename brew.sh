@@ -49,3 +49,6 @@ brew install clang-format
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/personal ~/Desktop
+ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/university ~/Desktop
