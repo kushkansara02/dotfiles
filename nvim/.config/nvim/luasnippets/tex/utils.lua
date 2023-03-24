@@ -111,18 +111,6 @@ return {}, {
         { condition = line_begin }
       ),
 
-      s({ trig = "emn", dscr = "Numbered list" },
-        fmta(
-          [[
-            \begin{enumerate}
-              \item <>
-            \end{enumerate}
-          ]],
-          { i(0) }
-        ),
-        { condition = line_begin }
-      ),
-
       s({ trig = "ie", dscr = "Item" },
         fmta(
           [[\item <>]],
