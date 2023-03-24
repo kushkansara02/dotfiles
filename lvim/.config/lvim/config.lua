@@ -8,13 +8,15 @@ lvim.format_on_save = {
 }
 
 lvim.leader = "space"
+
 lvim.builtin.terminal.open_mapping = "<Leader>tm"
+lvim.builtin.terminal.active = true
 
 lvim.colorscheme = "onedark"
 
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
-lvim.builtin.terminal.active = true
+
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 
