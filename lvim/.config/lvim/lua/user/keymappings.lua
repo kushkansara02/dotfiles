@@ -25,10 +25,10 @@ lvim.keys = {
     ["wk"] = "<C-w>k",
     ["wl"] = "<C-w>l",
 
-    ["<C-h>"] = "<C-w>>",
-    ["<C-l>"] = "<C-w><",
-    ["<C-j>"] = "<C-w>-",
-    ["<C-k>"] = "<C-w>+",
+    ["<C-h>"] = "<C-w><",
+    ["<C-l>"] = "<C-w>>",
+    ["<C-j>"] = "<C-w>+",
+    ["<C-k>"] = "<C-w>-",
   },
   ---@usage change or add keymappings for visual mode
   visual_mode = {
