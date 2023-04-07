@@ -27,7 +27,7 @@ function sshv() {
 }
 
 function xcl() {
-  rm *.aux *.fdb_latexmk *.fls *.log *.synctex.gz
+  rm *.aux *.fdb_latexmk *.fls *.log *.synctex.gz *.out
 }
 
 # Use Git’s colored diff when available
