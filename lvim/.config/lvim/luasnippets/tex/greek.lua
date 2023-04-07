@@ -21,29 +21,53 @@ end
 
 return {}, {
 
-  s({ trig = ";a", snippetType = "autosnippet" },
-    {
-      t("\\alpha"),
+      s({ trig = ";a", snippetType = "autosnippet" },
+        {
+          t("\\alpha"),
+        }
+      ),
+
+
+      s({ trig = ";b", snippetType = "autosnippet" },
+        {
+          t("\\beta"),
+        }
+      ),
+
+      s({ trig = ";g", snippetType = "autosnippet" },
+        {
+          t("\\gamma"),
+        }
+      ),
+
+      s({ trig = ";d", snippetType = "autosnippet" },
+        {
+          t("\\delta"),
+        }
+      ),
+
+      s({ trig = ";t", snippetType = "autosnippet" },
+        {
+          t("\\tau"),
+        }
+      ),
+
+      s({ trig = ";w", snippetType = "autosnippet" },
+        {
+          t("\\omega"),
+        }
+      ),
+
+      s({ trig = ";D", snippetType = "autosnippet" },
+        {
+          t("\\Delta"),
+        }
+      ),
+
+      s({ trig = ";i", snippetType = "autosnippet" },
+        {
+          t("\\pi"),
+        }
+      ),
+
     }
-  ),
-
-
-  s({ trig = ";b", snippetType = "autosnippet" },
-    {
-      t("\\beta"),
-    }
-  ),
-
-  s({ trig = ";g", snippetType = "autosnippet" },
-    {
-      t("\\gamma"),
-    }
-  ),
-
-  s({ trig = ";d", snippetType = "autosnippet" },
-    {
-      t("\\delta"),
-    }
-  ),
-
-}

@@ -8,19 +8,39 @@ lvim.format_on_save = {
 }
 
 lvim.leader = "space"
+
 lvim.builtin.terminal.open_mapping = "<Leader>tm"
+lvim.builtin.terminal.active = true
+
+lvim.builtin.treesitter.ensure_installed = {
+  "bash",
+  "c",
+  "javascript",
+  "json",
+  "lua",
+  "markdown",
+  "markdown_inline",
+  "python",
+  "typescript",
+  "tsx",
+  "css",
+  "rust",
+  "yaml",
+}
+lvim.builtin.treesitter.highlight.additional_vim_regex_highlighting = { "markdown" }
 
 lvim.colorscheme = "onedark"
 
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
-lvim.builtin.terminal.active = true
+
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 
 lvim.builtin.treesitter.auto_install = true
 
 lvim.plugins = require_clean "user.plugins"
-reload 'user.luasnip'
 reload 'user.keymappings'
+reload 'user.luasnip'
 reload 'user.vimtex'
+reload 'user.obsidian'

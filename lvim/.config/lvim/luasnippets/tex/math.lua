@@ -25,11 +25,11 @@ return {}, {
         fmta(
           [[
                \begin{equation*}
-                   \begin{split}
-                       <>
-                   \end{split}
+                 \begin{split}
+                   <>
+                 \end{split}
                \end{equation*}
-             ]],
+          ]],
           { i(0) }
         ),
         { condition = line_begin }
@@ -66,7 +66,7 @@ return {}, {
         )
       ),
 
-      s({ trig = 'sm' },
+      s({ trig = 'sum' },
         fmta(
           [[<>\sum_{<>}^{<>}<>]],
           {
@@ -121,6 +121,51 @@ return {}, {
             i(0)
           }
         )
+      ),
+
+      s({ trig = ';h' },
+        fmta(
+          [[<>\hat{<>}<>]],
+          {
+            f(function(_, snip) return snip.captures[1] end),
+            i(1),
+            i(0)
+          }
+        )
+      ),
+
+      s({ trig = 'ee' },
+        fmta(
+          [[<>e^{<>}<>]],
+          {
+            f(function(_, snip) return snip.captures[1] end),
+            i(1),
+            i(0)
+          }
+        )
+      ),
+
+      s({ trig = ';f' },
+        fmta(
+          [[<>\mathscr{F} \{ <> \}<>]],
+          {
+            f(function(_, snip) return snip.captures[1] end),
+            i(1),
+            i(0)
+          }
+        )
+      ),
+
+      s({ trig = ";nf", snippetType = "autosnippet" },
+        {
+          t("\\infty"),
+        }
+      ),
+
+      s({ trig = ";nn", snippetType = "autosnippet" },
+        {
+          t("-\\infty"),
+        }
       ),
 
     }
