@@ -12,7 +12,8 @@ alias dot="cd ~/Projects/dotfiles"
 alias sshc="cd ~/.ssh"
 alias ssh_key_cp="cat ~/.ssh/id_rsa.pub | pbcopy"
 
-alias n="lvim"
+alias n="nvim"
+alias l="lvim"
 
 alias ll="ls -la"
 
