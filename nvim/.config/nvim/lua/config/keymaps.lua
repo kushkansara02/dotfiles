@@ -33,3 +33,5 @@ map("n", "<leader>tM", function()
 end, { desc = "Terminal (cwd)" })
 map("t", "<esc><esc>", "<c-c><c-d>", { desc = "Exit terminal" })
 map("t", "<c-n>", "<c-\\><c-n>", { desc = "Normal mode" })
+
+-- TODO: ftplugin
