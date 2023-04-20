@@ -37,10 +37,11 @@ brew install tree-sitter
 brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font
 brew install ripgrep
+brew install lazygit
 
 # Install languages
 brew install python
-brew install go
+brew install golang
 brew install lua
 brew install node
 brew install --cask mactex
@@ -50,5 +51,6 @@ brew install clang-format
 # Remove outdated versions from the cellar.
 brew cleanup
 
+# Create aliases
 ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/personal ~/Desktop
 ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/university ~/Desktop
