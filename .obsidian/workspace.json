@@ -1,40 +1,39 @@
 {
   "main": {
-    "id": "89aea83bc77bfba7",
+    "id": "21fe20aa8454c941",
     "type": "split",
     "children": [
       {
-        "id": "6344ac510b921db0",
+        "id": "30fc92708d05b7e8",
         "type": "tabs",
         "children": [
           {
-            "id": "c9a9bedab60b4bd3",
+            "id": "792d820a971b11ce",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Winter 2023/SE350/Scheduling Algorithms.md",
+                "file": "Winter 2023/CS341/Greedy/Minimum Spanning Trees.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "stacked": true
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "2834220b1d398d5d",
+    "id": "1e634b621519e3a2",
     "type": "split",
     "children": [
       {
-        "id": "9f9ad1b299eb9d25",
+        "id": "a27180b80da17fb6",
         "type": "tabs",
         "children": [
           {
-            "id": "1228beb171d8a61d",
+            "id": "95d3f7b7c82e42e0",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +43,7 @@
             }
           },
           {
-            "id": "09e0cfe195e61f05",
+            "id": "c745c9a2cf71c61f",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -59,7 +58,7 @@
             }
           },
           {
-            "id": "a09caa8f926adfb9",
+            "id": "340a673473b15944",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -70,23 +69,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "65875faeb02cdb7a",
+    "id": "d11f4557e21ac51c",
     "type": "split",
     "children": [
       {
-        "id": "20585f8b0afe5cf0",
+        "id": "f9db519a57830d55",
         "type": "tabs",
         "children": [
           {
-            "id": "c6c375e89a8b72c7",
+            "id": "71ad48ffa1372f68",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Winter 2023/SE350/Scheduling Algorithms.md",
+                "file": "Winter 2023/CS341/Greedy/Minimum Spanning Trees.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,19 +97,19 @@
             }
           },
           {
-            "id": "05b69ec1e23cb046",
+            "id": "bec65c51339a4f87",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Winter 2023/SE350/Scheduling Algorithms.md",
+                "file": "Winter 2023/CS341/Greedy/Minimum Spanning Trees.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "88e36f7b762e1a4c",
+            "id": "9757731944ee124f",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -121,21 +120,21 @@
             }
           },
           {
-            "id": "a5722eafd3d47b44",
+            "id": "9d7ff29f47688cc2",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Winter 2023/SE350/Scheduling Algorithms.md"
+                "file": "Winter 2023/CS341/Greedy/Minimum Spanning Trees.md"
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 562.5
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -147,47 +146,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a5722eafd3d47b44",
+  "active": "792d820a971b11ce",
   "lastOpenFiles": [
-    "2023-03-21.md",
-    "Winter 2023/SE350/Scheduling Algorithms.md",
-    "Marmoset Submission Command.md",
-    "images/Screenshot 2023-03-21 at 3.41.04 PM.png",
-    "images",
-    "Winter 2023/SE350/images/Screenshot 2023-03-21 at 3.40.53 PM.png",
-    "Winter 2023/SE350/Uniprocessor Scheduling.md",
-    "Untitled.canvas",
-    "Winter 2023/CS341/images/IMG_5D21B8E3CCA8-1.jpeg",
-    "Winter 2023/CS341/images/IMG_2E71C7247DD1-1.jpeg",
+    "Winter 2023/CS341/Greedy/Greedy Notes.md",
+    "Winter 2023/CS341/Max Flow & Min Cut/Minimum Vertex Cover.md",
     "Winter 2023/CS341/Max Flow & Min Cut/Minimum Cut.md",
-    "Winter 2023/CS341/Max Flow & Min Cut/Maximum Flow.md",
+    "Winter 2023/CS341/Max Flow & Min Cut/Max Flow Notes.md",
     "Winter 2023/CS341/Max Flow & Min Cut/Ford-Fulkerson's Algorithm.md",
-    "Winter 2023/CS341/Max Flow & Min Cut/Flow.md",
-    "Winter 2023/CS341/Max Flow & Min Cut/Cuts.md",
-    "Winter 2023/CS341/images/IMG_DB81AD03F113-1.jpeg",
-    "Winter 2023/CS341/images",
-    "Caching.md",
-    "Winter 2023/SE350/Virtual Memory.md",
-    "Winter 2023/SCI238/Galaxies.md",
-    "Winter 2023/SE350/Definitions/Indirect Address.md",
-    "Winter 2023/SE350/images/Screenshot 2023-03-20 at 1.57.15 PM.png",
-    "Winter 2023/SE350/images/Screenshot 2023-03-20 at 1.55.17 PM.png",
-    "Winter 2023/SCI238/images/Screenshot 2023-03-20 at 1.46.03 PM.png",
-    "Winter 2023/SCI238/images/Screenshot 2023-03-20 at 1.43.48 PM.png",
-    "Winter 2023/SCI238/images/Screenshot 2023-03-20 at 12.04.36 PM.png",
-    "Winter 2023/SCI238/Untitled.md",
-    "Winter 2023/SCI238/images",
-    "Winter 2023/SCI238",
-    "Winter 2023/SE350/images",
-    "Winter 2023/SE350/Definitions",
-    "Winter 2023/SE350",
-    "Winter 2023",
-    "SE",
-    "2023-03-16.md",
+    "Winter 2023/CS341/Max Flow & Min Cut/Bipartite Matchings.md",
+    "Winter 2023/CS341/NP Completeness/NP Complete Problems.md",
     "Winter 2023/CS341/DP/Shortest Paths/Floyd-Warshall.md",
-    "Winter 2023/CS341/Max Flow & Min Cut",
-    "Winter 2023/CS341/Misc/Powers of Adjacency Matrices.md",
-    "CS/CS341/Untitled.md",
-    "URA/Collecting Core Dumps.md"
+    "Winter 2023/CS341/DP/Shortest Paths"
   ]
 }
