@@ -66,7 +66,7 @@ return {}, {
         )
       ),
 
-      s({ trig = 'sum' },
+      s({ trig = ';sm' },
         fmta(
           [[<>\sum_{<>}^{<>}<>]],
           {
