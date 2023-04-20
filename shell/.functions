@@ -26,8 +26,19 @@ function sshv() {
     sshfs $1: ~/kkansara-$1 -o volname=kkansara-ssh-$1;
 }
 
+function push_config() {
+  scp -r ~/.config/nvim/ $1:~/.config/
+}
+
 function xcl() {
-  rm *.aux *.fdb_latexmk *.fls *.log *.synctex.gz *.out
+  rm -v *.aux
+  rm -v *.fdb_latexmk
+  rm -v *.fls
+  rm -v *.log
+  rm -v *.synctex.gz
+  rm -v *.out
+  rm -v *.toc
+  rm -v .DS_Store
 }
 
 # Use Git’s colored diff when available
