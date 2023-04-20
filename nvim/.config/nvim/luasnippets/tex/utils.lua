@@ -57,6 +57,32 @@ return {}, {
         { condition = line_begin } -- set condition in the `opts` table
       ),
 
+      s({ trig = "h4", dscr = "Paragraph section" },
+        fmta(
+          [[
+            \paragraph{<>}
+
+            <>
+          ]],
+          { i(1), i(0) }
+        ),
+        { condition = line_begin } -- set condition in the `opts` table
+      ),
+
+      s({ trig = "nte", dscr = "Note section" },
+        fmta(
+          [[
+            \ansbox{
+              <>
+            }
+            \noindent <>
+          ]],
+          { i(1), i(0) }
+        ),
+        { condition = line_begin } -- set condition in the `opts` table
+      ),
+
+
       s({ trig = "new", dscr = "A generic new environment" },
         fmta(
           [[
@@ -105,6 +131,18 @@ return {}, {
             \begin{itemize}
               \item <>
             \end{itemize}
+          ]],
+          { i(0) }
+        ),
+        { condition = line_begin }
+      ),
+
+      s({ trig = "emn", dscr = "Numbered list" },
+        fmta(
+          [[
+            \begin{enumerate}
+              \item <>
+            \end{enumerate}
           ]],
           { i(0) }
         ),

@@ -21,95 +21,151 @@ end
 
 return {}, {
 
-  s({ trig = "eq", dscr = "Expands 'eq' into an equation environment" },
-    fmta(
-      [[
+      s({ trig = "eq", dscr = "Expands 'eq' into an equation environment" },
+        fmta(
+          [[
                \begin{equation*}
-                   \begin{split}
-                       <>
-                   \end{split}
+                 \begin{split}
+                   <>
+                 \end{split}
                \end{equation*}
-             ]],
-      { i(0) }
-    ),
-    { condition = line_begin }
-  ),
+          ]],
+          { i(0) }
+        ),
+        { condition = line_begin }
+      ),
 
-  s({ trig = "mm" },
-    fmta(
-      "<>$<>$",
-      {
-        f(function(_, snip) return snip.captures[1] end),
-        d(1, get_visual),
-      }
-    )
-  ),
-  s({ trig = "mc", dscr = "Non inline math environment" },
-    fmta(
-      "<>$$<>$$",
-      {
-        f(function(_, snip) return snip.captures[1] end),
-        d(1, get_visual),
-      }
-    ),
-    { condition = line_begin }
-  ),
+      s({ trig = "mm" },
+        fmta(
+          "<>$<>$",
+          {
+            f(function(_, snip) return snip.captures[1] end),
+            d(1, get_visual),
+          }
+        )
+      ),
+      s({ trig = "mc", dscr = "Non inline math environment" },
+        fmta(
+          "<>$$<>$$",
+          {
+            f(function(_, snip) return snip.captures[1] end),
+            d(1, get_visual),
+          }
+        ),
+        { condition = line_begin }
+      ),
 
-  s({ trig = 'ff' },
-    fmta(
-      [[<>\frac{<>}{<>}]],
-      {
-        f(function(_, snip) return snip.captures[1] end),
-        i(1),
-        i(2)
-      }
-    )
-  ),
+      s({ trig = 'ff' },
+        fmta(
+          [[<>\frac{<>}{<>}]],
+          {
+            f(function(_, snip) return snip.captures[1] end),
+            i(1),
+            i(2)
+          }
+        )
+      ),
 
-  s({ trig = 'sm' },
-    fmta(
-      [[<>\sum_{<>}^{<>}<>]],
-      {
-        f(function(_, snip) return snip.captures[1] end),
-        i(1),
-        i(2),
-        i(0)
-      }
-    )
-  ),
+      s({ trig = ';sm' },
+        fmta(
+          [[<>\sum_{<>}^{<>}<>]],
+          {
+            f(function(_, snip) return snip.captures[1] end),
+            i(1),
+            i(2),
+            i(0)
+          }
+        )
+      ),
 
-  s({ trig = 'bbr' },
-    fmta(
-      [[<>\left(<>\right)<>]],
-      {
-        f(function(_, snip) return snip.captures[1] end),
-        i(1),
-        i(0)
-      }
-    )
-  ),
+      s({ trig = 'bbr' },
+        fmta(
+          [[<>\left(<>\right)<>]],
+          {
+            f(function(_, snip) return snip.captures[1] end),
+            i(1),
+            i(0)
+          }
+        )
+      ),
 
-  s({ trig = 'cbr' },
-    fmta(
-      [[<>\{<>\}<>]],
-      {
-        f(function(_, snip) return snip.captures[1] end),
-        i(1),
-        i(0)
-      }
-    )
-  ),
+      s({ trig = 'cbr' },
+        fmta(
+          [[<>\{<>\}<>]],
+          {
+            f(function(_, snip) return snip.captures[1] end),
+            i(1),
+            i(0)
+          }
+        )
+      ),
 
-  s({ trig = 'tn' },
-    fmta(
-      [[<>\int_{<>}^{<>}<>]],
-      {
-        f(function(_, snip) return snip.captures[1] end),
-        i(1),
-        i(2),
-        i(0)
-      }
-    )
-  ),
+      s({ trig = 'tn' },
+        fmta(
+          [[<>\int_{<>}^{<>}<>]],
+          {
+            f(function(_, snip) return snip.captures[1] end),
+            i(1),
+            i(2),
+            i(0)
+          }
+        )
+      ),
 
-}
+      s({ trig = ';u' },
+        fmta(
+          [[<>u_{-1}(<>)<>]],
+          {
+            f(function(_, snip) return snip.captures[1] end),
+            i(1),
+            i(0)
+          }
+        )
+      ),
+
+      s({ trig = ';h' },
+        fmta(
+          [[<>\hat{<>}<>]],
+          {
+            f(function(_, snip) return snip.captures[1] end),
+            i(1),
+            i(0)
+          }
+        )
+      ),
+
+      s({ trig = 'ee' },
+        fmta(
+          [[<>e^{<>}<>]],
+          {
+            f(function(_, snip) return snip.captures[1] end),
+            i(1),
+            i(0)
+          }
+        )
+      ),
+
+      s({ trig = ';f' },
+        fmta(
+          [[<>\mathscr{F} \{ <> \}<>]],
+          {
+            f(function(_, snip) return snip.captures[1] end),
+            i(1),
+            i(0)
+          }
+        )
+      ),
+
+      s({ trig = ";nf", snippetType = "autosnippet" },
+        {
+          t("\\infty"),
+        }
+      ),
+
+      s({ trig = ";nn", snippetType = "autosnippet" },
+        {
+          t("-\\infty"),
+        }
+      ),
+
+    }
