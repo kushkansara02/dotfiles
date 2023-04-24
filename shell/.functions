@@ -57,3 +57,43 @@ fi;
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+# Merge PDF files, preserving hyperlinks
+# Usage: `mergeP output.pdf <input files>`
+function mergeP() {
+  gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=$1 "${@:2}"
+}
+
+# Merge all PDFs listed in the input file
+# Usage: mergePL order.txt output_file.pdf (will take input file .files/order.txt)
+function mergePL() {
+
+  # Define the input and output file names
+  input_file=.files/$1
+  output_file=$2
+
+  # Create an empty array to hold the PDF filenames
+  pdf_files=()
+
+  # Read each filename from the input file and convert it to a PDF
+  while read -r md_file; do
+    pdf_files+=("$md_file")
+  done < "$input_file"
+
+  pandoc -s -o "$output_file" "${pdf_files[@]}"
+}
+
+# Generate a file list of files in the current directory
+# Usage: genFileList order.txt
+function genFileList() {
+  if [ ! -d ".files" ]; then
+    mkdir .files
+  fi
+
+  if [ -f ".files/$1" ]; then
+    rm .files/$1
+  fi
+
+  touch .files/$1
+  find . -type f -name '*.md' -exec basename {} \; > .files/$1
+}

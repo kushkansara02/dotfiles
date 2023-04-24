@@ -8,6 +8,7 @@ alias .....="cd ../../../.."
 alias study="cd ~/Desktop/university/study/winter_2023/"
 alias ura="cd ~/Desktop/university/study/winter_2023/ura/wear-lev/code/"
 alias dot="cd ~/Projects/dotfiles"
+alias snotes="cd ~/obsidian/school/Winter\ 2023/"
 
 alias sshc="cd ~/.ssh"
 alias ssh_key_cp="cat ~/.ssh/id_rsa.pub | pbcopy"
@@ -28,10 +29,6 @@ alias egrep='egrep --color=auto'
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
-
-# Merge PDF files, preserving hyperlinks
-# Usage: `mergepdf input{1,2,3}.pdf`
-alias mergepdf='gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=_merged.pdf'
 
 # Intuitive map function
 # For example, to list all directories that contain a certain file:
