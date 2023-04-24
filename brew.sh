@@ -47,6 +47,7 @@ brew install node
 brew install --cask mactex
 brew install --cask skim
 brew install clang-format
+brew install pandoc
 
 # Remove outdated versions from the cellar.
 brew cleanup
