@@ -1,16 +1,22 @@
 return {
-  -- add gruvbox
   { "navarasu/onedark.nvim" },
 
   { "ellisonleao/gruvbox.nvim" },
 
   { "folke/tokyonight.nvim" },
 
-  -- Configure LazyVim to load gruvbox
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    opts = {
+      flavour = "macchiato"
+    }
+  },
+
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "onedark",
+      colorscheme = "catppuccin",
     },
   },
 }
