@@ -1,7 +1,11 @@
 return {
   {
     "christoomey/vim-tmux-navigator",
-    lazy = false,
+    opts = {
+      lazy = false,
+    },
+    config = function()
+    end,
     keys = {
       {
         "<C-h>",
