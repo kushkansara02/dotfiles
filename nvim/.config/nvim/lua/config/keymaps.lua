@@ -20,10 +20,10 @@ map("n", "∆", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
 map("n", "˙", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" })
 map("n", "¬", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
 
-map("n", "<leader>tm", function()
+map("n", "<leader>tM", function()
   Util.float_term(nil, { cwd = Util.get_root() })
 end, { desc = "Terminal (root dir)" })
-map("n", "<leader>tM", function()
+map("n", "<leader>tm", function()
   Util.float_term()
 end, { desc = "Terminal (cwd)" })
 
