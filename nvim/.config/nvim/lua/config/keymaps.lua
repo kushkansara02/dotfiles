@@ -26,5 +26,9 @@ end, { desc = "Terminal (root dir)" })
 map("n", "<leader>tM", function()
   Util.float_term()
 end, { desc = "Terminal (cwd)" })
+
+map("n", "<leader>Ls", "<cmd>LspStart<cr>", { desc = "Start LSP" })
+map("n", "<leader>Lt", "<cmd>LspStop<cr>", { desc = "Stop LSP" })
+
 map("t", "<esc><esc>", "<c-c><c-d>", { desc = "Exit terminal" })
 map("t", "<c-n>", "<c-\\><c-n>", { desc = "Normal mode" })

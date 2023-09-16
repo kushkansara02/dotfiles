@@ -6,6 +6,7 @@ return {
         opts.defaults["<leader>sn"] = { name = "+noice" }
       end
       opts.defaults["<leader>o"] = { name = "Go" }
+      opts.defaults["<leader>L"] = { name = "LSP" }
     end,
   }
 }
