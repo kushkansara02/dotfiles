@@ -8,7 +8,7 @@ alias .....="cd ../../../.."
 alias study="cd ~/Desktop/university/study/winter_2023/"
 alias ura="cd ~/Desktop/university/study/winter_2023/ura/wear-lev/code/"
 alias dot="cd ~/Projects/dotfiles"
-alias snotes="cd ~/obsidian/school/Winter\ 2023/"
+alias proj="cd ~/Projects"
 
 alias sshc="cd ~/.ssh"
 alias ssh_key_cp="cat ~/.ssh/id_rsa.pub | pbcopy"
