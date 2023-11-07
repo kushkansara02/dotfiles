@@ -21,7 +21,7 @@ return {
         end,
         expr = true, silent = true, mode = "i",
       },
-      { "jk", function() require("luasnip").jump(1) end,  mode = "s" },
+      { "jk", function() require("luasnip").jump(1) end,   mode = "s" },
       { "kj", function() require("luasnip").jump( -1) end, mode = { "i", "s" } },
     },
   },
