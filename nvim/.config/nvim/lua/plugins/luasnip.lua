@@ -12,17 +12,17 @@ return {
         store_selection_keys = "jk",
       }
     end,
-  -- stylua: ignore
+    -- stylua: ignore
     keys = {
       {
         "jk",
         function()
-          return require("luasnip").jumpable(1) and "<Plug>luasnip-jump-next" or "<tab>"
+          return require("luasnip").jumpable(1) and "<Plug>luasnip-jump-next"
         end,
         expr = true, silent = true, mode = "i",
       },
-      { "jk", function() require("luasnip").jump(1) end, mode = "s" },
-      { "kj", function() require("luasnip").jump(-1) end, mode = { "i", "s" } },
+      { "jk", function() require("luasnip").jump(1) end,  mode = "s" },
+      { "kj", function() require("luasnip").jump( -1) end, mode = { "i", "s" } },
     },
   },
 }

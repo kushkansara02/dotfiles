@@ -156,6 +156,17 @@ return {}, {
         )
       ),
 
+      s({ trig = ';l' },
+        fmta(
+          [[<>\mathscr{L} \{ <> \}<>]],
+          {
+            f(function(_, snip) return snip.captures[1] end),
+            i(1),
+            i(0)
+          }
+        )
+      ),
+
       s({ trig = ";nf", snippetType = "autosnippet" },
         {
           t("\\infty"),

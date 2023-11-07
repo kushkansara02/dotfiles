@@ -64,6 +64,12 @@ return {}, {
         }
       ),
 
+      s({ trig = ";r", snippetType = "autosnippet" },
+        {
+          t("\\rho"),
+        }
+      ),
+
       s({ trig = ";i", snippetType = "autosnippet" },
         {
           t("\\pi"),
