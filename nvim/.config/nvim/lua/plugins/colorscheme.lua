@@ -5,12 +5,14 @@ return {
 
   { "folke/tokyonight.nvim" },
 
+  { "svrana/neosolarized.nvim" },
+
   {
     "catppuccin/nvim",
     name = "catppuccin",
     opts = {
-      flavour = "macchiato"
-    }
+      flavour = "macchiato",
+    },
   },
 
   {
