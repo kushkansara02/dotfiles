@@ -5,8 +5,6 @@ return {
 
   { "folke/tokyonight.nvim" },
 
-  { "svrana/neosolarized.nvim" },
-
   {
     "catppuccin/nvim",
     name = "catppuccin",
