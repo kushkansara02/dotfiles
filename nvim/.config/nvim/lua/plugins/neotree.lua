@@ -13,12 +13,12 @@ return {
     },
   },
   keys = {
-    { "<leader>E", "<leader>fe", desc = "Explorer NeoTree (root dir)", remap = true },
-    { "<leader>e", "<leader>fE", desc = "Explorer NeoTree (cwd)", remap = true },
+    { "<leader>E", "<leader>fE", desc = "Explorer NeoTree (root dir)", remap = true },
+    { "<leader>e", "<leader>fe", desc = "Explorer NeoTree (cwd)", remap = true },
     {
       "<leader>fE",
       function()
-        require("neo-tree.command").execute({ toggle = true, dir = Util.root() })
+        require("neo-tree.command").execute({ toggle = true, dir = require("lazyvim.util").root() })
       end,
       desc = "Explorer NeoTree (root dir)",
     },
