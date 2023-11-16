@@ -21,10 +21,10 @@ map("n", "˙", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" }
 map("n", "¬", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
 
 map("n", "<leader>tM", function()
-  Util.float_term(nil, { cwd = Util.get_root() })
+  Util.terminal.open(nil, { cwd = Util.root.get() })
 end, { desc = "Terminal (root dir)" })
 map("n", "<leader>tm", function()
-  Util.float_term()
+  Util.terminal.open()
 end, { desc = "Terminal (cwd)" })
 
 map("n", "<leader>Ls", "<cmd>LspStart<cr>", { desc = "Start LSP" })
