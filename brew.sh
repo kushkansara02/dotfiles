@@ -16,9 +16,6 @@ brew install openssh
 brew install stow
 brew install --cask iterm2
 
-# LunarVim
-bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
-
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
@@ -51,7 +48,3 @@ brew install pandoc
 
 # Remove outdated versions from the cellar.
 brew cleanup
-
-# Create aliases
-ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/personal ~/Desktop
-ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/university ~/Desktop
