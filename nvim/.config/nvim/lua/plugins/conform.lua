@@ -6,6 +6,7 @@ return {
       sh = { "shfmt" },
       go = { "goimports" },
       cpp = { "clang-format" },
+      python = { "black" },
     },
   },
 }

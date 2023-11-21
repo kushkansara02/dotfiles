@@ -13,7 +13,6 @@ alias sshc="cd ~/.ssh"
 alias ssh_key_cp="cat ~/.ssh/id_rsa.pub | pbcopy"
 
 alias n="nvim"
-alias l="lvim"
 
 alias ll="ls -la"
 
@@ -39,5 +38,3 @@ alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
-
-alias expenv='export $(grep -v '^#' .env | xargs)'
