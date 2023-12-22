@@ -1,5 +1,3 @@
-local map = vim.keymap.set
-
 return {
   {
     "scalameta/nvim-metals",
@@ -55,9 +53,9 @@ return {
 
       metals_config.on_attach = function(client, bufnr)
         require("metals").setup_dap()
-        map("n", "<leader>ws", function()
+        vim.keymap.set("n", "<leader>ms", function()
           require("metals").hover_worksheet()
-        end)
+        end, { desc = "Hover Worksheet" })
       end
 
       return metals_config
