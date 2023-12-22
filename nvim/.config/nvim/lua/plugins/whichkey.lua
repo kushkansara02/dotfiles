@@ -7,6 +7,7 @@ return {
       end
       opts.defaults["<leader>o"] = { name = "Go" }
       opts.defaults["<leader>L"] = { name = "LSP" }
+      opts.defaults["<leader>ch"] = { name = "Signature Help" }
     end,
-  }
+  },
 }

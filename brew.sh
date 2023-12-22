@@ -46,5 +46,16 @@ brew install --cask skim
 brew install clang-format
 brew install pandoc
 
+# Lichess setup
+brew install coursier/formulas/coursier
+cs setup
+npm i -g pnpm
+brew tap mongodb/brew
+brew install mongodb-community@7.0
+brew install redis
+brew install sbt
+pip3 install pymongo
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 # Remove outdated versions from the cellar.
 brew cleanup

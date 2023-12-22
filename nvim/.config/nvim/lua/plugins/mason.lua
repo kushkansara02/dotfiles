@@ -10,6 +10,7 @@ return {
         "cpplint",
         "shfmt",
         "stylua",
+        "prettier",
       },
     },
   },
