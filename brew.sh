@@ -33,7 +33,7 @@ brew install sshfs
 # Neovim Utils
 brew install tree-sitter
 brew tap homebrew/cask-fonts
-brew install --cask font-hack-nerd-font
+brew install --cask font-Hack-nerd-font
 brew install ripgrep
 brew install lazygit
 

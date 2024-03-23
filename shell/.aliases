@@ -5,9 +5,10 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
+
+# convenience folders
 alias dot="cd ~/Projects/dotfiles"
 alias proj="cd ~/Projects"
-alias ura="cd ~/Projects/graph-kv/tardis"
 
 alias sshc="cd ~/.ssh"
 alias ssh_key_cp="cat ~/.ssh/id_rsa.pub | pbcopy"
