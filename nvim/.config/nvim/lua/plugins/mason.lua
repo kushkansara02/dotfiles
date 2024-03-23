@@ -3,14 +3,27 @@ return {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
-        "golangci-lint",
+        -- LSP
+        "gopls",
+        "clangd",
+        "bash-language-server",
+        "lua-language-server",
+        "json-lsp",
+        "texlab",
+        -- formatters
         "goimports",
-        "delve",
         "clang-format",
-        "cpplint",
         "shfmt",
         "stylua",
+        "black",
         "prettier",
+        -- linters
+        "golangci-lint",
+        "cpplint",
+        "markdownlint",
+        "proselint",
+        -- DAP
+        "delve",
       },
     },
   },
