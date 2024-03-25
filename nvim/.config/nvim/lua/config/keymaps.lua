@@ -15,11 +15,13 @@ local function map(mode, lhs, rhs, opts)
   end
 end
 
+-- resizing windows
 map("n", "˚", "<cmd>resize +2<cr>", { desc = "Increase window height" })
 map("n", "∆", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
 map("n", "˙", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" })
 map("n", "¬", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
 
+-- terminal
 map("n", "<leader>tM", function()
   Util.terminal.open(nil, { cwd = Util.root.get() })
 end, { desc = "Terminal (root dir)" })
@@ -27,8 +29,10 @@ map("n", "<leader>tm", function()
   Util.terminal.open()
 end, { desc = "Terminal (cwd)" })
 
-map("n", "<leader>Ls", "<cmd>LspStart<cr>", { desc = "Start LSP" })
-map("n", "<leader>Lt", "<cmd>LspStop<cr>", { desc = "Stop LSP" })
-
 map("t", "<esc><esc>", "<c-c><c-d>", { desc = "Exit terminal" })
 map("t", "<c-n>", "<c-\\><c-n>", { desc = "Normal mode" })
+
+-- LSP
+map("n", "<leader>Ls", "<cmd>LspStart<cr>", { desc = "Start LSP" })
+map("n", "<leader>Lt", "<cmd>LspStop<cr>", { desc = "Stop LSP" })
+map("n", "<leader>Li", "<cmd>LspInfo<cr>", { desc = "LSP Info" })
