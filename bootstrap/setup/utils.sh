@@ -3,6 +3,7 @@
 brew install git
 brew install lazygit
 brew install tmux
+brew install tpm
 brew install stow
 brew install openssh
 brew install fzf
