@@ -1,10 +1,6 @@
 return {
   { "navarasu/onedark.nvim" },
 
-  { "ellisonleao/gruvbox.nvim" },
-
-  { "folke/tokyonight.nvim" },
-
   {
     "catppuccin/nvim",
     name = "catppuccin",
@@ -16,7 +12,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "onedark",
     },
   },
 }
