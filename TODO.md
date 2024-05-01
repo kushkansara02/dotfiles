@@ -1,5 +1,7 @@
 # TODO
 
 - Clean up whichkey setup
-- make better tmux navigation shortcuts
-- vim mode in terminal
+- Make better tmux navigation shortcuts
+- Vim mode in terminal
+- Tmux color theme consistency with Neovim
+- Figure out what the "root dir" part of the lualine is
