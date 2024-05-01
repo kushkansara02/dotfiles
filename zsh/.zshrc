@@ -13,6 +13,8 @@ plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
+eval "$(fzf --zsh)"
+
 for file in ~/.{path,exports,aliases,functions}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
