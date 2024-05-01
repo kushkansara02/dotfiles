@@ -24,3 +24,6 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # fzf default options
 export FZF_DEFAULT_OPTS="--height=40% --layout=reverse --info=inline --border --margin=1 --padding=1"
+
+# vi-mode for zsh
+export VI_MODE_SET_CURSOR=true

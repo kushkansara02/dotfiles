@@ -9,11 +9,12 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 # much, much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
 eval "$(fzf --zsh)"
+bindkey -v
 
 for file in ~/.{path,exports,aliases,functions}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
