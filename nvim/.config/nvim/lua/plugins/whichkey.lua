@@ -7,7 +7,6 @@ return {
       end
 
       opts.defaults["<leader>o"] = { name = "Go" }
-      opts.defaults["<leader>m"] = { name = "Metals" }
       opts.defaults["<leader>L"] = { name = "LSP" }
       opts.defaults["<leader>t"] = { name = "Terminal" }
     end,
