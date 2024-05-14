@@ -25,6 +25,9 @@ return {
         -- DAP
         "delve",
       },
+      ui = {
+        border = "rounded",
+      },
     },
   },
 }
