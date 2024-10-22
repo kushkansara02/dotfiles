@@ -9,6 +9,7 @@ alias .....="cd ../../../.."
 # convenience folders
 alias dot="cd ~/Projects/dotfiles"
 alias proj="cd ~/Projects"
+alias fd="cd ~/Projects/food"
 
 alias sshc="cd ~/.ssh"
 alias ssh_key_cp="cat ~/.ssh/id_rsa.pub | pbcopy"
