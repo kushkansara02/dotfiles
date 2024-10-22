@@ -1,18 +1,10 @@
 return {
   { "navarasu/onedark.nvim" },
-
-  {
-    "catppuccin/nvim",
-    name = "catppuccin",
-    opts = {
-      flavour = "macchiato",
-    },
-  },
-
+  { "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = {} },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "onedark",
     },
   },
 }
