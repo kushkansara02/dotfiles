@@ -7,9 +7,9 @@ return {
     return {
       options = {
         icons_enabled = true,
-        theme = "catppuccin",
-        component_separators = { left = "", right = "" },
-        section_separators = { left = "", right = "" },
+        theme = "onedark",
+        component_separators = { left = "", right = "" },
+        section_separators = { left = "", right = "" },
         disabled_filetypes = {
           winbar = {},
         },
@@ -26,40 +26,20 @@ return {
         lualine_a = {
           {
             "mode",
-            icon = "",
-            separator = { left = "", right = "" },
-            color = {
-              fg = "#1c1d21",
-              bg = "#b4befe",
-            },
           },
         },
         lualine_b = {
           {
             "branch",
             icon = "",
-            separator = { left = "", right = "" },
-            color = {
-              fg = "#1c1d21",
-              bg = "#7d83ac",
-            },
           },
           {
             "diff",
-            separator = { left = "", right = "" },
-            color = {
-              fg = "#1c1d21",
-              bg = "#7d83ac",
-            },
           },
         },
         lualine_c = {
           {
             "diagnostics",
-            separator = { left = "", right = "" },
-            color = {
-              bg = "#45475a",
-            },
           },
           {
             "filename",
@@ -69,21 +49,12 @@ return {
         lualine_y = {
           {
             "filetype",
-            icons_enabled = false,
-            color = {
-              fg = "#1C1D21",
-              bg = "#eba0ac",
-            },
+            icons_enabled = true,
           },
         },
         lualine_z = {
           {
             "location",
-            icon = "",
-            color = {
-              fg = "#1c1d21",
-              bg = "#f2cdcd",
-            },
           },
         },
       },
