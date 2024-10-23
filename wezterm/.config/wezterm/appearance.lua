@@ -4,6 +4,7 @@ local module = {}
 function module.apply(config)
     -- config.color_scheme = "GruvboxDark"
     config.color_scheme = "OneDark (base16)"
+    config.font_size = 13
 
     config.window_padding = {
         left = 0,
