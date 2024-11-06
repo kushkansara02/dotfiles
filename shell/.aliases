@@ -20,7 +20,7 @@ alias ll="ls -la"
 
 # Shortcuts
 alias g="git"
-alias t="tmux a -t "
+alias t="tmux a -t"
 
 # Always enable colored `grep` output
 # Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
