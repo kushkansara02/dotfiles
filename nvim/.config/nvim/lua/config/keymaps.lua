@@ -38,6 +38,3 @@ map("n", "<leader>Li", "<cmd>LspInfo<cr>", { desc = "LSP Info" })
 -- Move selected lines with shift+j or shift+k
 map("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move line down" })
 map("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move line up" })
-
--- Oil
-map("n", "<leader>e", "<cmd>lua require('oil').toggle_float()<CR>", { desc = "Oil" })
