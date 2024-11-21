@@ -15,26 +15,28 @@ local function map(mode, lhs, rhs, opts)
   end
 end
 
--- resizing windows
-map("n", "˚", "<cmd>resize +2<cr>", { desc = "Increase window height" })
-map("n", "∆", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
-map("n", "˙", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" })
-map("n", "¬", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" }) -- terminal
-map("n", "<leader>tM", function()
-  Util.terminal.open(nil, { cwd = Util.root.get() })
-end, { desc = "Terminal (root dir)" })
-map("n", "<leader>tm", function()
-  Util.terminal.open()
-end, { desc = "Terminal (cwd)" })
+local function del(mode, key, opts)
+  opts = opts or {}
+  opts.silent = opts.silent ~= false
+  vim.keymap.del(mode, key, opts)
+end
 
-map("t", "<esc><esc>", "<c-c><c-d>", { desc = "Exit terminal" })
-map("t", "<c-n>", "<c-\\><c-n>", { desc = "Normal mode" })
+local function remap(mode, lhs, rhs, opts)
+  del(mode, lhs, opts)
+  map(mode, lhs, rhs, opts)
+end
+
+-- resizing windows
+remap("n", "<A-k>", "<cmd>resize +2<cr>", { desc = "Increase window height" })
+remap("n", "<A-j>", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
+remap("n", "<A-l>", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" })
+remap("n", "<A-h>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
 
 -- LSP
 map("n", "<leader>Ls", "<cmd>LspStart<cr>", { desc = "Start LSP" })
 map("n", "<leader>Lt", "<cmd>LspStop<cr>", { desc = "Stop LSP" })
 map("n", "<leader>Li", "<cmd>LspInfo<cr>", { desc = "LSP Info" })
 
--- Move selected lines with shift+j or shift+k
-map("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move line down" })
-map("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move line up" })
+-- Diable luasnip default
+del("s", "<Tab>", {})
+del({ "i", "s" }, "<S-Tab>", {})
