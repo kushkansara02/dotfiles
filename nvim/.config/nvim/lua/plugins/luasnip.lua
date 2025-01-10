@@ -1,15 +1,15 @@
 return {
   {
     "L3MON4D3/LuaSnip",
-    dependencies = {},
+    version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+    build = "make install_jsregexp",
     opts = function()
       require("luasnip.loaders.from_lua").load({ paths = "~/.config/nvim/luasnippets/" })
       return {
         history = true,
         delete_check_events = "TextChanged",
         enable_autosnippets = true,
-        update_events = "TextChanged,TextChangedI",
-        store_selection_keys = "jk",
+        cut_selection_keys = "jk",
       }
     end,
     -- stylua: ignore
