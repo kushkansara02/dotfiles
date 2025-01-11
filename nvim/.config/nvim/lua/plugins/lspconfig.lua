@@ -4,8 +4,6 @@ return {
     init = function()
       local keys = require("lazyvim.plugins.lsp.keymaps").get()
 
-      keys[#keys + 1] = { "<leader>ch", vim.lsp.buf.signature_help, desc = "Signature Help" }
-
       keys[#keys + 1] = { "<leader>cs", vim.diagnostic.setqflist, desc = "Show All Workspace Diagnostics" }
 
       keys[#keys + 1] = {
