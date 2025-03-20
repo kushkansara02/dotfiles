@@ -1,4 +1,5 @@
 local wezterm = require("wezterm")
+local mux = wezterm.mux
 local module = {}
 
 function module.apply(config)
@@ -19,6 +20,11 @@ function module.apply(config)
     config.show_tab_index_in_tab_bar = true
     config.switch_to_last_active_tab_when_closing_tab = true
     config.hide_tab_bar_if_only_one_tab = true
+
+    wezterm.on("gui-startup", function(cmd)
+        local tab, pane, window = mux.spawn_window(cmd or {})
+        window:gui_window():toggle_fullscreen()
+    end)
 end
 
 return module
