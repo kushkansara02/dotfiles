@@ -25,6 +25,8 @@ function module.apply(config)
         local tab, pane, window = mux.spawn_window(cmd or {})
         window:gui_window():toggle_fullscreen()
     end)
+
+    config.native_macos_fullscreen_mode = true
 end
 
 return module
