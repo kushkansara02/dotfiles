@@ -60,4 +60,8 @@ return {}, {
   s({ trig = ";i", snippetType = "autosnippet" }, {
     t("\\pi"),
   }),
+
+  s({ trig = ";x", snippetType = "autosnippet" }, {
+    t("\\oplus"),
+  }),
 }

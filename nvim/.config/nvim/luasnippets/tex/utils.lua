@@ -48,15 +48,15 @@ return {}, {
   ),
 
   s(
-    { trig = "nq", dscr = "Mid-level section" },
+    { trig = "nq", dscr = "New question" },
     fmta(
       [[
             \subsection*{<>}{
-              \qstart
+                \qstart
 
-              <>
+                <>
 
-              \qend
+                \qend
             }
           ]],
       { i(1), i(0) }
@@ -167,7 +167,7 @@ return {}, {
     fmta(
       [[
             \begin{enumerate}
-              \item <>
+                \item <>
             \end{enumerate}
           ]],
       { i(0) }
