@@ -57,6 +57,16 @@ return {}, {
   ),
 
   s(
+    { trig = ";v" },
+    fmta([[<>\overrightarrow{<>}]], {
+      f(function(_, snip)
+        return snip.captures[1]
+      end),
+      d(1, get_visual),
+    })
+  ),
+
+  s(
     { trig = "ff" },
     fmta([[<>\frac{<>}{<>}]], {
       f(function(_, snip)
