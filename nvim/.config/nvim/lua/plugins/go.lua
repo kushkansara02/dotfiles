@@ -14,25 +14,25 @@ return {
     build = ':lua require("go.install").update_all_sync()',
     keys = {
       {
-        "<leader>oi",
+        "<leader>cgi",
         "<Cmd>GoIfErr<cr>",
         mode = "n",
         desc = "If Err",
       },
       {
-        "<leader>ot",
+        "<leader>cgt",
         "<Cmd>GoTest<cr>",
         mode = "n",
         desc = "Test",
       },
       {
-        "<leader>op",
+        "<leader>cgp",
         "<Cmd>GoFixPlurals<cr>",
         mode = "n",
         desc = "Fix Plurals",
       },
       {
-        "<leader>oo",
+        "<leader>cgo",
         "<Cmd>GoPkgOutline<cr>",
         mode = "n",
         desc = "Package Outline",
