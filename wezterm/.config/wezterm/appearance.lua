@@ -3,9 +3,9 @@ local mux = wezterm.mux
 local module = {}
 
 function module.apply(config)
-    -- config.color_scheme = "GruvboxDark"
     config.color_scheme = "OneDark (base16)"
     config.font_size = 16
+    config.font = wezterm.font("JetBrainsMono Nerd Font", { weight = "Regular" })
 
     config.window_padding = {
         left = 0,
