@@ -10,12 +10,13 @@ return {
         "lua-language-server",
         "json-lsp",
         "texlab",
+        "rust-analyzer",
         -- formatters
         "goimports",
         "clang-format",
         "shfmt",
         "stylua",
-        "black",
+        "ruff",
         "prettier",
         -- linters
         "golangci-lint",

@@ -6,6 +6,7 @@ return {
       markdown = { "proselint", "markdownlint", "vale" },
       cpp = { "cpplint" },
       go = { "golangcilint" },
+      py = { "ruff" },
     },
   },
 }
