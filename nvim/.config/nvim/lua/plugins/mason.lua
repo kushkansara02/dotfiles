@@ -13,6 +13,7 @@ return {
         "rust-analyzer",
         -- formatters
         "goimports",
+        "gofumpt",
         "clang-format",
         "shfmt",
         "stylua",

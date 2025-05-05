@@ -4,10 +4,11 @@ return {
     formatters_by_ft = {
       lua = { "stylua" },
       sh = { "shfmt" },
-      go = { "goimports" },
+      go = { "goimports", "gofumpt" },
       cpp = { "clang-format" },
       python = { "ruff" },
       typescript = { "prettier" },
+      graphql = { "prettier" },
     },
   },
 }
