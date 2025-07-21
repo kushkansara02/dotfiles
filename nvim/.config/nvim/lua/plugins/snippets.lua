@@ -1,5 +1,4 @@
 return {
-  { import = "lazyvim.plugins.extras.coding.luasnip" },
   {
     "saghen/blink.cmp",
     version = "*",
