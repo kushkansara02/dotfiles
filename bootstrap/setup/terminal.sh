@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-brew install --cask iterm2
+brew install --cask wezterm
 brew tap homebrew/cask-fonts
 brew install --cask font-jetbrains-mono-nerd-font
-brew install --cask wezterm

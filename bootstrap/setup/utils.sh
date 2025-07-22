@@ -10,3 +10,5 @@ brew install fzf
 brew install grep
 brew install ack
 brew install ripgrep
+brew install --cask karabiner-elements
+brew install --cask raycast
