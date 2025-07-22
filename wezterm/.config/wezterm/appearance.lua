@@ -27,6 +27,10 @@ function module.apply(config)
     end)
 
     config.native_macos_fullscreen_mode = true
+    config.keys = {
+        { key = "m", mods = "CTRL", action = wezterm.action.DisableDefaultAssignment },
+        { key = "m", mods = "CTRL", action = wezterm.action.ToggleFullScreen },
+    }
 end
 
 return module
