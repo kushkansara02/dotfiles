@@ -14,3 +14,6 @@ adopt:
 overwrite:
 	stow --adopt --target=$$HOME */
 	git restore .
+
+stow_work:
+	stow --verbose --target=$$HOME --restow nvim/ karabiner/ wezterm/

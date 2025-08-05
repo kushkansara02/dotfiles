@@ -16,8 +16,13 @@ source $ZSH/oh-my-zsh.sh
 eval "$(fzf --zsh)"
 bindkey -v
 
-for file in ~/.{path,exports,aliases,functions}; do
-	[ -r "$file" ] && [ -f "$file" ] && source "$file";
-done;
-unset file;
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
 
+alias n="nvim"
+alias ll="ls -la"
+alias k='kubectl'
+
+export EDITOR='nvim'
