@@ -26,3 +26,4 @@ alias ll="ls -la"
 alias k='kubectl'
 
 export EDITOR='nvim'
+export VI_MODE_SET_CURSOR=true
