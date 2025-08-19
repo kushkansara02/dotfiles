@@ -129,6 +129,3 @@
 
     name = Kush Kansara
 
-[url "git@github.tesla.com:"]
-    insteadOf = https://github.tesla.com/
-
