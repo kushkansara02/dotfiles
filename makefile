@@ -16,4 +16,4 @@ overwrite:
 	git restore .
 
 stow_work:
-	stow --verbose --target=$$HOME --restow nvim/ karabiner/ wezterm/
+	stow --verbose --target=$$HOME --restow nvim/ karabiner/ wezterm/ tmux/
