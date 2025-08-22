@@ -12,12 +12,12 @@
         },
         "rules": [
           {
-            "description": "Remap (held) caps_lock to hyper key (⌘⌃⌥⇧)",
+            "description": "Remap (held) tab to hyper key (⌘⌃⌥⇧)",
             "manipulators": [
               {
                 "type": "basic",
                 "from": {
-                  "key_code": "caps_lock",
+                  "key_code": "tab",
                   "modifiers": {
                     "optional": [
                       "any"
@@ -50,7 +50,30 @@
                 ],
                 "to_if_alone": [
                   {
-                    "key_code": "escape"
+                    "key_code": "tab"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Remap caps lock to escape",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "caps_lock",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "escape",
+                    "modifiers": []
                   }
                 ],
                 "type": "basic"
