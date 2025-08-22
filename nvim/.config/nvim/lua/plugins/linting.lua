@@ -5,7 +5,6 @@ return {
       linters_by_ft = {
         markdown = { "markdownlint" },
         cpp = { "cpplint" },
-        go = { "golangcilint" },
         py = { "ruff" },
       },
     },
@@ -14,7 +13,6 @@ return {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
-        "golangci-lint",
         "cpplint",
         "markdownlint",
         "proselint",
