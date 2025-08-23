@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Easier navigation: .., ..., ...., ....., ~ and -
+# Easier navigation: .., ..., ...., .....
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
@@ -13,33 +13,14 @@ alias fd="cd ~/Projects/food"
 
 alias sshc="cd ~/.ssh"
 alias ssh_key_cp="cat ~/.ssh/id_rsa.pub | pbcopy"
-
-alias n="nvim"
-
 alias ll="ls -la"
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
+alias reload='exec ${SHELL} -l'
+alias path='echo -e ${PATH//:/\\n}'
 
 # Shortcuts
 alias g="git"
 alias t="tmux a -t"
-
-# Always enable colored `grep` output
-# Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
-
-# Enable aliases to be sudo’ed
-alias sudo='sudo '
-
-# Intuitive map function
-# For example, to list all directories that contain a certain file:
-# find . -name .gitattributes | map dirname
-alias map="xargs -n1"
-
-# Reload the shell (i.e. invoke as a login shell)
-alias reload="exec ${SHELL} -l"
-
-# Print each PATH entry on a separate line
-alias path='echo -e ${PATH//:/\\n}'
-
 alias k='kubectl'
+alias n="nvim"
