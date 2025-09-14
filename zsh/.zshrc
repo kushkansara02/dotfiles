@@ -14,6 +14,7 @@ plugins=(git zsh-syntax-highlighting zsh-autosuggestions vi-mode)
 source $ZSH/oh-my-zsh.sh
 
 eval "$(fzf --zsh)"
+eval "$(zoxide init zsh --cmd cd)"
 bindkey -v
 
 for file in ~/.{path,exports,aliases,functions}; do

@@ -12,3 +12,4 @@ brew install ack
 brew install ripgrep
 brew install --cask karabiner-elements
 brew install --cask raycast
+brew install zoxide
