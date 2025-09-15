@@ -1,4 +1,4 @@
-dirs = config/ editor/ git/ ssh/ terminal/
+dirs = config/ git/ ssh/ terminal/
 
 # unstow, then stow
 all:
