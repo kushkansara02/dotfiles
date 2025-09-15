@@ -1,4 +1,4 @@
-dirs = editor/ git/ karabiner/ nvim/ shell/ ssh/ tmux/ wezterm/ zsh/
+dirs = config/ editor/ git/ ssh/ terminal/
 
 # unstow, then stow
 all:

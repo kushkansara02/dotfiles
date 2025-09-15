@@ -6,20 +6,11 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
-# convenience folders
-alias dot="cd ~/Projects/dotfiles"
-alias proj="cd ~/Projects"
-alias fd="cd ~/Projects/food"
-
-alias sshc="cd ~/.ssh"
-alias ssh_key_cp="cat ~/.ssh/id_rsa.pub | pbcopy"
 alias ll="ls -la"
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
 alias reload='exec ${SHELL} -l'
-alias path='echo -e ${PATH//:/\\n}'
 
-# Shortcuts
 alias g="git"
 alias t="tmux a -t"
 alias k='kubectl'
