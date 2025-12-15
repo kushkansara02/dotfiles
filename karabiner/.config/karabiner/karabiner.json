@@ -12,12 +12,11 @@
         },
         "rules": [
           {
-            "description": "Remap (held) tab to hyper key (⌘⌃⌥⇧)",
+            "description": "Remap Caps Lock to Ctrl when held, Esc when tapped",
             "manipulators": [
               {
-                "type": "basic",
                 "from": {
-                  "key_code": "tab",
+                  "key_code": "caps_lock",
                   "modifiers": {
                     "optional": [
                       "any"
@@ -27,10 +26,30 @@
                 "to": [
                   {
                     "key_code": "left_control",
+                    "lazy": true
+                  }
+                ],
+                "to_if_alone": [
+                  {
+                    "key_code": "escape"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Remap Tab to Hyper key when held, Tab when tapped",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "tab"
+                },
+                "to": [
+                  {
+                    "key_code": "left_shift",
                     "modifiers": [
-                      "left_command",
-                      "left_option",
-                      "left_shift"
+                      "any"
                     ]
                   },
                   {
@@ -51,29 +70,6 @@
                 "to_if_alone": [
                   {
                     "key_code": "tab"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Remap caps lock to escape",
-            "manipulators": [
-              {
-                "type": "basic",
-                "from": {
-                  "key_code": "caps_lock",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "escape",
-                    "modifiers": []
                   }
                 ],
                 "type": "basic"
@@ -268,9 +264,33 @@
                     "value": 1
                   }
                 ],
-                "description": "Open Chrome",
+                "description": "Open Arc",
                 "from": {
                   "key_code": "p",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open -a 'Arc.app'"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "conditions": [
+                  {
+                    "name": "hyper",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "description": "Open Google Chrome",
+                "from": {
+                  "key_code": "g",
                   "modifiers": {
                     "optional": [
                       "any"

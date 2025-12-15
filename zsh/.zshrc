@@ -13,9 +13,6 @@ plugins=(git zsh-syntax-highlighting zsh-autosuggestions vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
-eval "$(fzf --zsh)"
-bindkey -v
-
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
@@ -27,3 +24,12 @@ alias k='kubectl'
 
 export EDITOR='nvim'
 export VI_MODE_SET_CURSOR=true
+export PATH="$(brew --prefix openssl)/bin:$PATH"
+export PATH="$(brew --prefix)/opt/postgresql@16/bin:$PATH"
+export TELEPORT_PROXY=teleport.aws.neon.tech
+export TELEPORT_LOGIN=developer
+
+eval "$(~/.local/bin/mise activate zsh)"
+eval "$(zoxide init zsh --cmd cd)"
+eval "$(fzf --zsh)"
+bindkey -v

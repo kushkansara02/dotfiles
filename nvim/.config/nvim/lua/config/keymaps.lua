@@ -19,3 +19,6 @@ map("n", "<A-h>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width
 -- Disable luasnip defaults
 del({ "s" }, "<Tab>", {})
 del({ "i", "s" }, "<S-Tab>", {})
+
+-- fix for devcontainer
+vim.keymap.set("n", "<BS>", "<cmd>TmuxNavigateLeft<CR>", { desc = "window left (backspace fix)" })
